@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "onchange \"components/\" -- npm run build:guide",
     "sync": "browser-sync start --server './' --files './styleguide/components.json' --startPath ./styleguide/index.html",
-    "build:guide": "atomic-lab build --markup ejs",
+    "build:guide": "atomic-lab build",
     "start": "npm run build:guide && npm-run-all -p watch sync"
   },
   "author": "steelydylan",
